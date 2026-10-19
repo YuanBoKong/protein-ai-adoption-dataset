@@ -648,20 +648,3 @@ MDE_{\mathrm{F10}}
 $$
 
 The number of models and the MDE are not in one-to-one correspondence. For example, F04 contains 26 models with an MDE of 1.617079918, whereas F10 contains 27 models with an MDE of 1.601253671. F04 has fewer models but a slightly higher MDE, indicating that the MDE is determined jointly by the share distribution of models and the number of models.
-
----
-
-Basis of calculation: the intent frequencies and model frequencies in the [original frequency workbook](/Users/xiaokong/temp_work/2026/JDIS/result/rq2_use_depth_mde_feature_space_2020_2025.xlsx); the fixed-denominator convention follows the [existing UDI calculation program](/Users/xiaokong/temp_work/2026/JDIS/src/analysis/rq2_use_depth_mde_feature_space.py). This file is a local calculation record, not the main text of the paper.
-
-| H    | X1           | X2    |
-| ---- | ------------ | ----- |
-| F01  | **0.564056** | 2.407 |
-| F02  | **0.486054** | 1.397 |
-| F03  | **0.513805** | 2.098 |
-| F04  | **0.492357** | 1.617 |
-| F05  | **0.494389** | 1.513 |
-| F06  | **0.510257** | 1.806 |
-| F07  | **0.485618** | 1.263 |
-| F08  | **0.487319** | 1.488 |
-| F09  | **0.499634** | 1.691 |
-| F10  | **0.489970** | 1.601 |
