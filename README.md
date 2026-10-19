@@ -1,3 +1,9 @@
+This dataset supports research on AI model adoption and diffusion across protein research fields during 2020–2025. It contains citation records with citing and cited DOIs, citation-intent labels (Background, Tool, and Method), publication dates, research-field assignments, and disciplinary subject attributes. Supporting tables provide cited-model metadata, mappings for ten research hotspots, and five model categories.
+
+The dataset also includes a publication sampling frame, a field-by-year Top50 high-citation sample, and publication-level innovation-output annotations. These files support analyses of citation-intent distributions, model coverage and diversity, temporal adoption patterns, cross-disciplinary differences, and innovation-output structures. File contents and fields are documented in the accompanying README and data dictionary.
+
+Owing to space limitations in the main article, the complete MDE calculation process could not be included in the appendix. The full calculation — per-hotspot model citation frequencies, exact shares, individual entropy contributions, and the worked formula for each of the ten hotspots — is provided in `MDE Calculation Process (CompleteVersion).md`.
+
 # Data files and fields
 
 | File | Contents | Fields |
