@@ -1,0 +1,10 @@
+﻿file,rows,purpose
+citation_records.csv,53764,"Record-level input for citation-intent, model-diversity, temporal and subject analyses."
+citation_subject_memberships.csv,91044,Long-form subject memberships; join on citation_id.
+cited_model_metadata.csv,44,Metadata for model-paper DOIs referenced by the exported citation records.
+field_mapping.csv,10,Standard labels for the ten core hotspots.
+model_type_mapping.csv,5,Five model-route categories and English translations.
+innovation_sampling_frame.csv,33333,"Current deduplicated eligible field-year sampling frame, without abstracts."
+innovation_top50_publications.csv,2534,"Exact saved Top50 publication sample, with protected narrative text omitted."
+innovation_output_annotations.csv,2534,Existing study-generated per-publication innovation-output annotations; no reclassification.
+innovation_output_categories.csv,5,Observed mapping from primary categories to broader output orientations.

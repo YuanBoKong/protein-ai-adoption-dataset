@@ -1,0 +1,6 @@
+﻿model_type_code,model_type_cn,model_type_en,model_type_short_en
+M1,结构、互作用与构象动力学预测/采样,"Structure, interaction and conformational dynamics prediction/sampling",Structure/interactions/dynamics
+M2,逆折叠与结构条件序列设计,Inverse folding and structure-conditioned sequence design,Inverse folding/sequence design
+M3,序列表征、功能/变异效应与组学预测,"Sequence representation, function/variant-effect and omics prediction",Sequence/function/omics
+M4,生成式蛋白/分子设计与优化,Generative protein/molecule design and optimization,Generative design/optimization
+M5,通用基础模型、多模态/蛋白-文本与工程平台,"General foundation models, multimodal protein-text and engineering platforms",Foundation/multimodal platforms

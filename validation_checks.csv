@@ -1,0 +1,24 @@
+﻿check,status,details
+Citation record IDs unique,PASS,53764
+Core frequencies match saved Intent_counts,PASS,30 aggregated cells
+Core frequencies match saved Model_counts,PASS,284 aggregated cells
+Subject frequencies match saved results,PASS,63 cells
+Referenced model metadata keys unique,PASS,44 matching metadata rows
+Referenced model metadata coverage,PASS,0 unmatched target DOI keys
+Current candidate pool reproduces saved Top50 membership,PASS,Current selection 2534; saved selection 2534
+Top50 snapshot matches current year,PASS,2534 publications
+Top50 snapshot matches current times_cited,PASS,2534 publications
+Top50 snapshot matches current field_code,PASS,2534 publications
+Top50 snapshot matches current field_year_citation_rank,PASS,2534 publications
+Innovation annotation IDs match saved sample,PASS,2534 annotation rows
+Core citing-publication model pairs unique,PASS,45859 core citation records
+Input citation table rows,INFO,62648
+Excluded citation rows outside valid year/intent criteria,INFO,8884
+Exported valid citation rows,INFO,53764
+Core citation rows,INFO,45859
+Eligible publication rows before deduplication,INFO,78089
+Deduplicated sampling-frame rows,INFO,33333
+Exported CSV read-back and data dictionary coverage,PASS,All nine data files match documented schemas and row counts
+Exported file referential integrity,PASS,"All citation, model, field, route and innovation annotation joins checked"
+Expanded subject memberships equal parsed source lists,PASS,91044
+Narrative-text column exclusion and sensitive-token scan,PASS,"No excluded text columns, credentials or local absolute paths found"

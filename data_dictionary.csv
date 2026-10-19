@@ -1,0 +1,67 @@
+﻿file,column,description,missing_value
+citation_records.csv,citation_id,Original citation-record identifier; unique within this file.,Empty CSV cell
+citation_records.csv,source_doi,Original citing-publication DOI string; not split or lowercased.,Empty CSV cell
+citation_records.csv,target_doi,Original cited-model-publication DOI string; trim outer whitespace for model joins.,Empty CSV cell
+citation_records.csv,intent_raw,"Original final citation-intent annotation, without reclassification.",Empty CSV cell
+citation_records.csv,field_name_zh_raw,Original Chinese hotspot label; other-topic records are retained for subject analyses.,Empty CSV cell
+citation_records.csv,publication_date,Original citing-publication date string.,Empty CSV cell
+citation_records.csv,subject_json_raw,Original JSON list of subject attributes; multiple labels are not mutually exclusive.,Empty CSV cell
+citation_records.csv,publication_year,First four-digit 19xx or 20xx year parsed from publication_date; restricted to 2020-2025.,Empty CSV cell
+citation_records.csv,intent,"Final label after outer-whitespace trimming and case normalization: Background, Tool or Method.",Empty CSV cell
+citation_records.csv,field_code,F01-F10 for a core hotspot; empty for records outside the ten hotspots.,Empty CSV cell
+citation_records.csv,in_core_model_analysis,"1 if included in the core model-frequency analysis (core hotspot and non-null target DOI), otherwise 0.",Empty CSV cell
+citation_subject_memberships.csv,membership_id,Export-local sequential identifier for each subject-list element.,Empty CSV cell
+citation_subject_memberships.csv,citation_id,Foreign key to citation_records.csv.,Empty CSV cell
+citation_subject_memberships.csv,subject,"One trimmed subject-list element. All list elements are retained, without fractional weighting.",Empty CSV cell
+cited_model_metadata.csv,metadata_id,Original model metadata record identifier.,Empty CSV cell
+cited_model_metadata.csv,target_doi,Original model-paper DOI.,Empty CSV cell
+cited_model_metadata.csv,model_name,Recorded model name; this may differ from the DOI-based analysis unit.,Empty CSV cell
+cited_model_metadata.csv,model_type_zh,Assigned Chinese model-route category; join to model_type_mapping.csv.,Empty CSV cell
+cited_model_metadata.csv,title,Model-publication title.,Empty CSV cell
+cited_model_metadata.csv,publication_year,"Publication year of the model paper, not the citing paper.",Empty CSV cell
+cited_model_metadata.csv,publication_date,Recorded model-publication date.,Empty CSV cell
+cited_model_metadata.csv,target_doi_key,DOI with outer whitespace removed; not lowercased.,Empty CSV cell
+field_mapping.csv,field_code,Stable F01-F10 hotspot code.,Empty CSV cell
+field_mapping.csv,field_name_zh,Chinese hotspot name.,Empty CSV cell
+field_mapping.csv,field_short_en,Standard English short name used in figures.,Empty CSV cell
+model_type_mapping.csv,model_type_code,M1-M5 route code.,Empty CSV cell
+model_type_mapping.csv,model_type_cn,Chinese route name corresponding to model_type_zh.,Empty CSV cell
+model_type_mapping.csv,model_type_en,Full English route name.,Empty CSV cell
+model_type_mapping.csv,model_type_short_en,Short English route name.,Empty CSV cell
+innovation_sampling_frame.csv,publication_key,"Deduplication key: doi: plus trimmed lowercase DOI, or title: plus normalized title when DOI is missing.",Empty CSV cell
+innovation_sampling_frame.csv,doi,Recorded publication DOI.,Empty CSV cell
+innovation_sampling_frame.csv,title,Publication title.,Empty CSV cell
+innovation_sampling_frame.csv,year,Publication year.,Empty CSV cell
+innovation_sampling_frame.csv,times_cited,"Citation count at the source snapshot; a historical value, not a live citation count.",Empty CSV cell
+innovation_sampling_frame.csv,area,Chinese hotspot label.,Empty CSV cell
+innovation_sampling_frame.csv,source_row_count,Number of source rows collapsed into this publication.,Empty CSV cell
+innovation_sampling_frame.csv,area_value_count,Number of distinct source hotspot labels before deduplication.,Empty CSV cell
+innovation_sampling_frame.csv,year_value_count,Number of distinct source years before deduplication.,Empty CSV cell
+innovation_sampling_frame.csv,field_code,Hotspot code joining to field_mapping.csv.,Empty CSV cell
+innovation_sampling_frame.csv,field_year_citation_rank,"One-based within-field/year rank by descending times_cited, ties ordered by publication_key.",Empty CSV cell
+innovation_top50_publications.csv,publication_key,"Deduplication key: doi: plus trimmed lowercase DOI, or title: plus normalized title when DOI is missing.",Empty CSV cell
+innovation_top50_publications.csv,doi,Recorded publication DOI.,Empty CSV cell
+innovation_top50_publications.csv,title,Publication title.,Empty CSV cell
+innovation_top50_publications.csv,year,Publication year.,Empty CSV cell
+innovation_top50_publications.csv,times_cited,"Citation count at the source snapshot; a historical value, not a live citation count.",Empty CSV cell
+innovation_top50_publications.csv,area,Chinese hotspot label.,Empty CSV cell
+innovation_top50_publications.csv,field_code,Hotspot code joining to field_mapping.csv.,Empty CSV cell
+innovation_top50_publications.csv,field_en,English hotspot short name.,Empty CSV cell
+innovation_top50_publications.csv,group_en,Existing group annotation from the saved innovation-output analysis; not recalculated by this export.,Empty CSV cell
+innovation_top50_publications.csv,field_year_citation_rank,"One-based within-field/year rank by descending times_cited, ties ordered by publication_key.",Empty CSV cell
+innovation_top50_publications.csv,source_row_count,Number of source rows collapsed into this publication.,Empty CSV cell
+innovation_top50_publications.csv,area_value_count,Number of distinct source hotspot labels before deduplication.,Empty CSV cell
+innovation_top50_publications.csv,year_value_count,Number of distinct source years before deduplication.,Empty CSV cell
+innovation_top50_publications.csv,selection_rule,Sampling rule recorded with the saved sample.,Empty CSV cell
+innovation_top50_publications.csv,conclusion_source,Extraction provenance label only; no conclusion text is distributed.,Empty CSV cell
+innovation_output_annotations.csv,publication_key,Foreign key to innovation_top50_publications.csv.,Empty CSV cell
+innovation_output_annotations.csv,innovation_type_en,Assigned primary innovation-output category.,Empty CSV cell
+innovation_output_annotations.csv,major_type_en,Assigned broader output orientation.,Empty CSV cell
+innovation_output_annotations.csv,confidence,Rule-based qualitative classification-confidence label; not a probability.,Empty CSV cell
+innovation_output_annotations.csv,score_computational_method,Original rule-based category score for computational method. Not a probability.,Empty CSV cell
+innovation_output_annotations.csv,score_tool_resource,Original rule-based category score for tool resource. Not a probability.,Empty CSV cell
+innovation_output_annotations.csv,score_experimental_strategy,Original rule-based category score for experimental strategy. Not a probability.,Empty CSV cell
+innovation_output_annotations.csv,score_molecular_material_product,Original rule-based category score for molecular material product. Not a probability.,Empty CSV cell
+innovation_output_annotations.csv,score_mechanism_theory_insight,Original rule-based category score for mechanism theory insight. Not a probability.,Empty CSV cell
+innovation_output_categories.csv,innovation_type_en,Assigned primary innovation-output category.,Empty CSV cell
+innovation_output_categories.csv,major_type_en,Assigned broader output orientation.,Empty CSV cell
